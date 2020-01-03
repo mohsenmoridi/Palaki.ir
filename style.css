@@ -59,7 +59,7 @@ h2 {
     margin: 0 0 8px;
 }
 
-.palakitype {
+.inputbox {
     margin-bottom: 24px;
 }
 
@@ -87,3 +87,46 @@ textarea#result {
     font-family: vazir;
     color: #9c9c9c;
 }
+
+
+.inputbox input {
+    display: none;
+}
+
+.inputbox label {
+    padding: 4px 8px 4px 16px;
+    border: 1px solid #eee;
+    background: #fff;
+    color: #999;
+    font-size: 0.8em;
+    border-radius: 50px;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer
+}
+
+
+
+.inputbox input[type="radio"]:checked+label{color: #fff;background: #ffa500;box-shadow: 0 10px 10px #ffca007a;border-color: #ffbe00;} 
+
+
+
+.inputbox input[type="checkbox"]:checked+label{color: #fff;background: #ffa500;box-shadow: 0 10px 10px #ffca007a;border-color: #ffbe00;} 
+
+
+.inputbox label:before {content: '';display: inline-block;width: 15px;height: 15px;background: #ffffff;border-radius: 20px;vertical-align: middle;margin-left: 4px;border: solid #f7f7f7 3px;box-sizing: border-box;
+transition: 0.3s all ease-in-out}
+
+.inputbox input[type="radio"]:checked+label:before {
+    background: #ffa500;
+    border-color: #fff;
+    transition-delay: 0.2s;
+}
+
+.inputbox input[type="checkbox"]:checked+label:before {
+    background: #ffa500;
+    border-color: #fff;
+    transition-delay: 0.2s;
+}
+
+
+
